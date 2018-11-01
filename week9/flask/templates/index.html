@@ -1,0 +1,25 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+
+	<title>Hello World In Flash</title>
+	<meta name="Nicholas Bielinski" content="COMP 840">
+
+	</head>
+
+	<body>
+		<h1>Hello world!</h1>
+		<button type="button" onClick="countClicks()">Click Me!</button>
+		<p>Clicks: <a id="clicks">0</a></p>
+	</body>
+	
+	<script type="text/javascript">
+		var clicks = 0;
+		function countClicks() {
+			clicks += 1;
+			document.getElementById("clicks").innerHTML = clicks;
+		};
+    </script>
+</html>
